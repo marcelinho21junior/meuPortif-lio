@@ -1,0 +1,80 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    /*background-color: rgb(22, 22, 22);*/
+}
+
+/*-----------------headerNavBar-----------------*/
+.headerNavBar{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    height: 10%;
+}
+
+.headerNavBarTemaPortifolio{
+    font-size: 30px;
+}
+
+.headerNavBarTemafolio{
+    color: #00804b;;
+}
+
+.headerNavBarLinks{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 35%;
+    
+}
+
+.nav-link{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: #00804b;
+    font-weight: 600;
+}
+
+/*APRESENTAÇAO COM FOTO*/
+.apresentaçaoComFoto{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction: row;
+    width: 100%;
+    height: 85%;
+    background-color: violet;
+}
+
+.apresentaçaoComFotoInformacoes{
+    width: 20%;
+    height: 30%;
+}
+
+/*BLOCOS*/
+.blocoBranco{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(241, 238, 238);
+    width: 100%;
+    height: 50%;
+}
+
+.blocoPreto{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 50%;
+}

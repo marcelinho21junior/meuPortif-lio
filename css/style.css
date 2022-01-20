@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+}
+
 body{
     height: 100vh;
     width: 100vw;
@@ -10,6 +14,7 @@ body{
     justify-content:space-around;
     align-items: center;
     flex-direction: row;
+    background-color: rgb(22, 22, 22);
     color: white;
     height: 10%;
 }
@@ -50,13 +55,191 @@ body{
     flex-direction: row;
     width: 100%;
     height: 85%;
-    background-color: violet;
+    background-color: rgb(22, 22, 22);
 }
 
 .apresentaçaoComFotoInformacoes{
+    color: white;
     width: 20%;
     height: 30%;
 }
+
+.apresentaçaoComFotoInformacoes h5{/*ola meu nome é*/
+    font-size: 20px;
+}
+
+.apresentaçaoComFotoInformacoes h2{/*marcelo junior*/
+    font-size: 40px;
+}
+
+.apresentaçaoComFotoInformacoes h4{/*eu sou...programador*/
+    font-size: 25px;
+}
+
+.apresentaçaoComFotoInformacoes h4 span{/*programador*/
+    color: #00804b;
+}
+
+.apresentaçaoComFotoInformacoes button{/*Button*/
+    margin: 15px 1px;/*cima e baixo*/
+    background-color: #00804b;
+    color: white;
+    width: 60%;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.apresentaçaoComFotoInformacoes button:hover{/*Button hover*/
+    margin: 15px 1px;/*cima e baixo*/
+    background-color: rgb(22, 22, 22);
+    color: #00804b;
+    transition: background-color .5s;
+}
+
+/*SOBRE QUEM SOU EU*/
+.sobreQuemSouEu{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+}
+
+.sobreQuemSouEuTitulo{/*TITULO SOBRE E QUEM SOU EU*/
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sobreQuemSouEuTitulo h2{/*TITULO SOBRE*/
+
+}
+
+.sobreQuemSouEuTitulo h4{/*TITULO QUEM SOU EU*/
+    color: #00804b;
+}
+
+.sobreQuemSouEuFotoEInformacao{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    height: 70%;
+}
+
+.sobreQuemSouEuFotoEInformacaoFOTO{/*esquerdo foto*/
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.sobreQuemSouEuFotoEInformacaoINFO{/*Direito Informaçoes e button*/
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+}
+
+.sobreQuemSouEuFotoEInformacaoINFO h4{/*Eu sou o marcelo e sou...*/
+    width: 100%;
+    text-align: start;
+}
+
+.sobreQuemSouEuFotoEInformacaoINFO h4 span{/*...programador*/
+    color: #00804b;
+}
+
+.sobreQuemSouEuFotoEInformacaoINFO p{/*texto de apresentação*/
+    text-align: justify;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.sobreQuemSouEuFotoEInformacaobtn{/*info e foto posicionamento butao*/
+    width: 100%;
+    text-align: end;
+}
+
+.sobreQuemSouEuFotoEInformacaoINFO button{/*info e foto butao*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 5px 0;
+    background-color: #00804b;
+    color: white;
+    font-weight: 600;
+}
+
+.sobreQuemSouEuFotoEInformacaoINFO button:hover{/*info e foto butao HOVER*/
+    background-color: white;
+    color:#00804b ;
+    transition: background-color .5s;
+}
+
+/*SERVIÇOS*/
+.servicos{/*SERVIÇOS*/
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+    background: tomato;
+}
+
+.servicosTitulo{/*SERVIÇOS tema*/
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.servicosTitulo h4{
+    color: #00804b;
+}
+
+.servicosCards{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    height: 70%;
+    width: 90%;
+    overflow-x: scroll;
+    background: turquoise;
+}
+
+.servicosCards::-webkit-scrollbar{
+    width: 0;
+}
+
+.servicosCardsIndividual{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    background: #00804b;
+    border-radius: 2px;
+    margin: 0 5px;
+    height: 80%;
+    width: 40%;
+}
+
+
 
 /*BLOCOS*/
 .blocoBranco{
@@ -66,7 +249,7 @@ body{
     flex-direction: row;
     background-color: rgb(241, 238, 238);
     width: 100%;
-    height: 50%;
+    height: 60%;
 }
 
 .blocoPreto{

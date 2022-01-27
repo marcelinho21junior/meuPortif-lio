@@ -196,8 +196,7 @@ body{
     align-items: center;
     flex-direction: column;
     height: 90%;
-    width: 90%;
-    background: tomato;
+    width: 70%;
 }
 
 .servicosTitulo{/*SERVIÇOS tema*/
@@ -205,7 +204,11 @@ body{
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    min-width: 110px;
+}
+
+.servicosTitulo h2{
+    color: white;
 }
 
 .servicosTitulo h4{
@@ -214,17 +217,18 @@ body{
 
 .servicosCards{
     display: flex;
-    justify-content:center;
+    justify-content:start;
     align-items: center;
     flex-direction: row;
-    height: 70%;
-    width: 90%;
     overflow-x: scroll;
-    background: turquoise;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 70%;
+    width: 75%;
 }
 
 .servicosCards::-webkit-scrollbar{
-    width: 0;
+    width: auto;
 }
 
 .servicosCardsIndividual{
@@ -232,14 +236,36 @@ body{
     justify-content:space-around;
     align-items: center;
     flex-direction: column;
-    background: #00804b;
-    border-radius: 2px;
+    background: rgb(58, 57, 57);
+    border-radius: 4px;
+    padding: 5px;
     margin: 0 5px;
     height: 80%;
-    width: 40%;
+    width: auto;
 }
 
+.servicosCardsIndividual:hover{
+    background: #00804b;
+    transition: background-color .5s;
+}
 
+.servicosCardsIndividual img{
+    height: 50%;
+}
+
+.servicosCardsIndividual i{
+    color: burlywood;
+}
+
+.servicosCardsIndividual h4{
+    color: white;
+}
+
+.servicosCardsIndividual p{
+    text-align: center;
+    font-size: auto;
+    color: white;
+}
 
 /*BLOCOS*/
 .blocoBranco{
@@ -261,3 +287,4 @@ body{
     width: 100%;
     height: 50%;
 }
+

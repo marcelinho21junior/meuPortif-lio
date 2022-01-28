@@ -268,6 +268,120 @@ body{
     color: white;
 }
 
+/*CONTATOS*/
+.contatos{
+    height: 90%;
+    width: 90%;
+    color: white;
+}
+
+.contatosTextoEINPUTS{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+}
+
+.textoEInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    width:50%;
+}
+
+.textoEInfoItens{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+}
+
+.textoEInfoCadaItens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.textoEInfoTxtINputButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 87%;
+    width: 50%;
+}
+
+.textoEInfoTxtINputButton span{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    margin: 5px 5px;
+}
+
+.textoEInfoINput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 8px;
+    height: 100%;
+}
+
+.textoEInfoINput input{
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin: 4px;
+}
+
+.textoEInfoINputSobrenome{
+    width: 100%;
+}
+
+.sobrenome{
+    width: 96%;
+}
+
+.textoEInfoINputTextarea{
+    width: 100%;
+    height: 100%;
+}
+
+.textoEInfoINput textarea{
+    margin: 4px;
+    width: 96%;
+    height: 90%;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.textoEInfoTxtINputButton button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+    width: 30%;
+    margin: 9px 4px;
+    background-color: #00804b;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.textoEInfoTxtINputButton button:hover{
+    background-color: white;
+    color:#00804b ;
+    transition: background-color .5s;
+}
+
+
 /*BLOCOS*/
 .blocoBranco{
     display: flex;

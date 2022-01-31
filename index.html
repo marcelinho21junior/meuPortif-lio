@@ -19,20 +19,20 @@
                 <a class="nav-link" href="#">Inicio</a>
             </div>
             <div>
-                <a class="nav-link" href="#">Sobre</a>
+                <a class="nav-link" href="#sobreLink">Sobre</a>
             </div>
 
             <div>
-                <a class="nav-link" href="#">Serviços</a>
+                <a class="nav-link" href="#servicoLink">Serviços</a>
             </div>
             <div>
-                <a class="nav-link" href="#">Especialidades</a>
+                <a class="nav-link" href="#especialidadeLink">Especialidades</a>
             </div>
             <div>
                 <a class="nav-link" href="#">Equipe</a>
             </div>
             <div>
-                <a class="nav-link" href="#">Contatos</a>
+                <a class="nav-link" href="#contatoLink">Contatos</a>
             </div>
         </div>
     </div>
@@ -53,6 +53,7 @@
     <!--SOBRE QUEM SOU EU-->
     <div class="blocoBranco">
         <div class="sobreQuemSouEu">
+            <a name='sobreLink'></a>
             <div class="sobreQuemSouEuTitulo">
                 <h2>Sobre</h2>
                 <h4>--Quem sou eu--</h4>
@@ -78,7 +79,8 @@
     <!--SERVIÇOS-->
     <div class="blocoPreto">
         <div class="servicos">
-            <div class="servicosTitulo">
+            <a name='servicoLink'></a>
+            <div class="contatoTitulo">
                 <h2>Serviços</h2>
                 <h4><span>--</span>Meus Projetos<span>--</span></h4>
             </div>
@@ -116,5 +118,132 @@
             </div>    
         </div>
     </div>
+    
+    <!--ESPECIALIDADES-->
+    <div class="blocoBranco">
+        <div class="Especialidade">
+            <a name='especialidadeLink'></a>
+            <div class="servicosTitulo">
+                <h2>Especialidades</h2>
+                <h4><span>--</span>Que faço<span>--</span></h4>
+            </div>
+            <div  class="EspecialidadeTextoEItens">
+                <div class="EspecialidadeTexto">
+                    <h3>Minhas habilidade criativas e experiencias</h3>
+                    <p>Minhas experiencias relacionadas a cada ferramentas que faz parte de minha<br>
+                        aprendizagem, de meus estudos e de minha jornada no mundo da programação!
+                    </p>
+                    <button>Saiba mais!</button>
+                </div>
+                <div class="EspecialidadeTodosItens">
+                    <div class="EspecialidadeTodosItensItensEPorcentagens">
+                        <h6>HTML</h6>
+                        <span>80%</span>
+                    </div>
+                    <div class="LineEspecialHorizontal html"></div>
+                    <div class="EspecialidadeTodosItensItensEPorcentagens">
+                        <h6>CSS3</h6>
+                        <span>66%</span>
+                    </div>
+                    <div class="LineEspecialHorizontal css"></div>
+                    <div class="EspecialidadeTodosItensItensEPorcentagens">
+                        <h6>JAVASCRIPT</h6>
+                        <span>50%</span>
+                    </div>
+                    <div class="LineEspecialHorizontal js"></div>
+                    <div class="EspecialidadeTodosItensItensEPorcentagens">
+                        <h6>MYSQL</h6>
+                        <span>45%</span>
+                    </div>
+                    <div class="LineEspecialHorizontal msq"></div>
+                    <div class="EspecialidadeTodosItensItensEPorcentagens">
+                        <h6>REACT.JS</h6>
+                        <span>35%</span>
+                    </div>
+                    <div class="LineEspecialHorizontal reactjs"></div>
+                    <div class="EspecialidadeTodosItensItensEPorcentagens">
+                        <h6>REACT NATIVE</h6>
+                        <span>15%</span>
+                    </div>
+                    <div class="LineEspecialHorizontal reactnative"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTATOS-->
+    <div class="blocoPreto">
+        <div class="contatos">
+            <a name='contatoLink'></a>
+            <div class="contatoTitulo">
+                <h2 class="tituloContatos">Contatos</h2>
+                <h4><span>--</span>Meus contatos<span>--</span></h4>
+            </div>
+            <div class="contatosTextoEINPUTS">
+                <div class="textoEInfo">
+                    <div>
+                        <h4>Fale Conosco!</h4>
+                        <p>Segue adiante alguns dados pessoais de meus contatos</p>
+                    </div>
+                    <div class="textoEInfoItens">
+                        <div class="textoEInfoCadaItens">
+                            <div  class="textoEInfoCadaItensIMG">
+                                <img src="./img/People.ico" alt="">
+                            </div>
+                            <div class="textoEInfoCadaItensINFO">
+                                <span>Nome</span>
+                                <p>Marcelo Junior</p>
+                            </div>
+                        </div>
+
+                        <div class="textoEInfoCadaItens">
+                            <div class="textoEInfoCadaItensIMG">
+                                <img src="./img/Location.ico" alt="">
+                            </div>
+                            <div class="textoEInfoCadaItensINFO">
+                                <span>Endereço</span>
+                                <p>Lorena, Sp</p>
+                            </div>
+                        </div>
+
+                        <div class="textoEInfoCadaItens">
+                            <div class="textoEInfoCadaItensIMG">
+                                <img src="./img/email.ico" alt="">
+                            </div>
+                            <div class="textoEInfoCadaItensINFO">
+                                <span>Email</span>
+                                <p>msbcontjr@outlook.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="textoEInfoTxtINputButton">
+                    <span>Mensagem</span>
+                        <form action="https://api.staticforms.xyz/submit" method="post" class="card">
+                            <div class="textoEInfoINput">
+                                <input type="hidden" name="accessKey" value="f917bb33-921a-4ef4-b7b9-d3a45cd96eb2">
+                                <!--<input type="hidden" name="redirectTo" value="https://marcelinho21junior.github.io/meuPortifolio/?fbclid=IwAR21IhTmqvW2Rbio8AlRLDrY7nvCvCgItub0Xunw8YxVYg0u3egHKWv8few">-->
+                                <div>
+                                    <input type="text" class="nameEmail" id="name" required='true' name="name" placeholder="Nome">
+                                    <input type="text" class="nameEmail" id="sobrename" required='true' name="sobrenome" placeholder="Sobrenome">
+                                </div>
+                                <div class="textoEInfoINputSobrenome">
+                                    <input type="text" class="sobrenome" required='true' name="email" placeholder="E-mail">
+                                </div>
+                                <div class="textoEInfoINputTextarea">
+                                    <textarea placeholder="Escrever..." name="message"></textarea>
+                                </div>
+                                
+                                <button onclick="enviar()">Enviar</button>
+                                <div id="res"></div>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
 </body>
 </html>

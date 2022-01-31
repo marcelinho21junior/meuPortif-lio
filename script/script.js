@@ -1,7 +1,11 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if(this.scrolly > 20){
-            $('.navbar').addClass("sticky");
-        }
-    })
-})
+function enviar(){
+    document.getElementById("name")
+    document.getElementById("sobrename")
+
+    if((name=='') && (sobrename=='')){
+        success=false
+    }else{
+        alert('Mensagem enviada com sucesso!!!')
+        success=true
+    }
+}

@@ -118,10 +118,6 @@ body{
     width: 100%;
 }
 
-.sobreQuemSouEuTitulo h2{/*TITULO SOBRE*/
-
-}
-
 .sobreQuemSouEuTitulo h4{/*TITULO QUEM SOU EU*/
     color: #00804b;
 }
@@ -376,7 +372,6 @@ body{
 }
 
 
-
 /*CONTATOS*/
 .contatos{
     height: 90%;
@@ -420,6 +415,8 @@ body{
     align-items: flex-start;
     flex-direction: column;
     width: 80%;
+    flex-direction: column;
+    width: 60%;
     height: 60%;
 }
 
@@ -428,6 +425,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+<<<<<<< HEAD
     width: 100%;
 }
 
@@ -451,6 +449,7 @@ body{
 
 .textoEInfoCadaItensINFO span{
     font-weight: 900;
+    width: 50%;
 }
 
 .textoEInfoTxtINputButton{

@@ -19,7 +19,10 @@ body{
     background-color: rgb(22, 22, 22);
     color: white;
     height: 10%;
+    width: 100%;
+    position: fixed;
 }
+
 
 .headerNavBarTemaPortifolio{
     font-size: 30px;
@@ -35,7 +38,6 @@ body{
     align-items: center;
     flex-direction: row;
     width: 35%;
-    
 }
 
 .nav-link{
@@ -52,7 +54,7 @@ body{
 /*APRESENTAÇAO COM FOTO*/
 .apresentaçaoComFoto{
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items:center;
     flex-direction: row;
     width: 100%;
@@ -60,10 +62,24 @@ body{
     background-color: rgb(22, 22, 22);
 }
 
+.apresentaçaoComFotoIMG{
+    width: 50%;
+}
+
+.apresentaçaoComFoto img{
+    height: 60%;
+    width: 60%;
+    margin: 0 50px;
+    border-radius: 50%;
+}
+
 .apresentaçaoComFotoInformacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     color: white;
-    width: 20%;
-    height: 30%;
+    width: 30%;
+    height: 40%;
 }
 
 .apresentaçaoComFotoInformacoes h5{/*ola meu nome é*/
@@ -108,6 +124,12 @@ body{
     flex-direction: column;
     height: 90%;
     width: 90%;
+}
+
+.sobreQuemSouEu img{
+    height: 55%;
+    width: 50%;
+    border-radius: 10%;
 }
 
 .sobreQuemSouEuTitulo{/*TITULO SOBRE E QUEM SOU EU*/
@@ -223,6 +245,11 @@ body{
     white-space: nowrap;
     height: 70%;
     width: 75%;
+}
+
+.servicosCards::-webkit-scrollbar-thumb{
+    background-color: rgb(58, 57, 57, 0.8);
+    border-radius: 10px;
 }
 
 .servicosCards::-webkit-scrollbar{
@@ -425,7 +452,6 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-<<<<<<< HEAD
     width: 100%;
 }
 
@@ -546,3 +572,83 @@ body{
     width: 100%;
     height: 50%;
 }
+
+/*MOBILE*/
+@media(max-width:540px){
+    .headerNavBarTemaPortifolio{
+        display: none;
+    }
+
+    .headerNavBarLinks{
+        display: none;
+    }
+
+    .one,.two,.three{
+        background-color: #fff;
+        width: 100%;
+        height: 5px;
+        margin: 6px auto;
+
+        transition-duration: 0.3s;
+    }
+    
+    .menu-toggle{
+        width: 40px;
+        height:0;
+        margin-left: 180px;
+    }
+
+    .headerNavBar.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+        background-color: #00804b;
+
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerNavBar.on .headerNavBarLinks{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .headerNavBar.on .menu-toggle{
+        position: absolute;
+        right: 80px;
+        top: 22px;
+        height: auto;
+        background-color: red;
+    }
+
+    .headerNavBar.on .menu-toggle .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .headerNavBar.on .menu-toggle .two{
+        opacity: 0;
+    }
+
+    .headerNavBar.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .headerNavBar.on .headerNavBarLinks div{
+        text-align: center;
+        display: block;
+    }
+
+    .headerNavBar.on .headerNavBarLinks a{
+        transition-duration: 0.5;
+        font-size: 1rem;
+        line-height: 6rem;
+        display: block;
+    }
+} 

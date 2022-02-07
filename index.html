@@ -14,6 +14,11 @@
         <div>
             <span class="headerNavBarTemaPortifolio">Port<span class="headerNavBarTemafolio">fólio</span></span>
         </div>
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
         <div class="headerNavBarLinks">
             <div>
                 <a class="nav-link" href="#">Inicio</a>
@@ -45,8 +50,8 @@
             <h4>Eu sou <span>Programador</span></h4>
             <button>Contratar-me</button>
         </div>
-        <div class="">
-        2
+        <div class="apresentaçaoComFotoIMG">
+            <img src="./img/eu1.jpg" alt="">
         </div>
     </div>
 
@@ -60,7 +65,7 @@
             </div>
             <div  class="sobreQuemSouEuFotoEInformacao">
                 <div class="sobreQuemSouEuFotoEInformacaoFOTO">
-                    foto
+                    <img src="./img/eu2.jpg" alt="">
                 </div>
                 <div class="sobreQuemSouEuFotoEInformacaoINFO">
                     <h4>Sou o Marcelo e sou <span>Programador</span></h4>
@@ -69,7 +74,7 @@
                         Gosto muito de desenvolvimento, curto demais Front-end!
                     </p>
                     <div class="sobreQuemSouEuFotoEInformacaobtn">
-                        <button>Download CV</button>
+                        <button id="btnDowloadCurriculo" onclick="DowloadCurriculo()">Download CV</button>
                     </div>
                 </div>
             </div>
@@ -221,7 +226,7 @@
                         <form action="https://api.staticforms.xyz/submit" method="post" class="card">
                             <div class="textoEInfoINput">
                                 <input type="hidden" name="accessKey" value="f917bb33-921a-4ef4-b7b9-d3a45cd96eb2">
-                                <!--<input type="hidden" name="redirectTo" value="https://marcelinho21junior.github.io/meuPortifolio/?fbclid=IwAR21IhTmqvW2Rbio8AlRLDrY7nvCvCgItub0Xunw8YxVYg0u3egHKWv8few">-->
+                                <input type="hidden" name="redirectTo" value="https://marcelinho21junior.github.io/meuPortifolio">
                                 <div>
                                     <input type="text" class="nameEmail" id="name" required='true' name="name" placeholder="Nome">
                                     <input type="text" class="nameEmail" id="sobrename" required='true' name="sobrenome" placeholder="Sobrenome">

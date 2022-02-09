@@ -54,7 +54,7 @@ body{
 /*APRESENTAÇAO COM FOTO*/
 .apresentaçaoComFoto{
     display: flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items:center;
     flex-direction: row;
     width: 100%;
@@ -64,13 +64,16 @@ body{
 
 .apresentaçaoComFotoIMG{
     width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .apresentaçaoComFoto img{
-    height: 60%;
-    width: 60%;
+    height: 50%;
+    width: 50%;
     margin: 0 50px;
     border-radius: 50%;
+    opacity: 70%;
 }
 
 .apresentaçaoComFotoInformacoes{
@@ -80,6 +83,7 @@ body{
     color: white;
     width: 30%;
     height: 40%;
+    margin: 0 80px;
 }
 
 .apresentaçaoComFotoInformacoes h5{/*ola meu nome é*/
@@ -650,5 +654,143 @@ body{
         font-size: 1rem;
         line-height: 6rem;
         display: block;
+    }
+
+    /*eu sou marcelo*/
+    .apresentaçaoComFoto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .apresentaçaoComFoto button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .apresentaçaoComFoto img{
+        display: none;
+    }
+
+    /*sobreQuemSouEu*/
+    .sobreQuemSouEuTitulo{
+        display: none;
+    }
+
+    .sobreQuemSouEuFotoEInformacao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .sobreQuemSouEuFotoEInformacaoINFO{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sobreQuemSouEuFotoEInformacaoINFO h4{
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .sobreQuemSouEuFotoEInformacaobtn button{
+        width: 100%;
+    }
+
+    /*ESPECIALIDADES*/
+    .mobileEspecialidade{
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+    }
+
+    .servicosTitulo{
+        display: none;
+    }
+
+    .EspecialidadeTexto{
+        text-align: center;
+    }
+
+    .EspecialidadeTextoEItens{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .EspecialidadeTodosItensItensEPorcentagens{
+        display: flex;
+        width: 100%;
+    }
+
+    .EspecialidadeTextoEItens button{
+        display: none;
+    }
+
+    /*CONTATOS*/
+    .mobileContact{
+        display: flex;
+        height: 90%;
+        width: 100%;
+    }
+
+    .contatoTitulo{
+        display: none;
+    }
+
+    .contatosTextoEINPUTS{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoEInfo{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .textoEInfoCadaItens{
+        width: 250px;
+    }
+
+    .textoEInfoCadaItensIMG img{
+        margin: 0 30px;
+        width: 40%;
+    }
+
+    .textoEInfoTxtINputButton{
+        width: 100%;
+    }
+
+    .textoEInfoINput{
+        display: flex;
+        flex-direction: column;
+        width: 110%;
+    }
+
+    .textoEInfoINput input{
+        width: 110%;
+    }
+
+    .textoEInfoINputSobrenome{
+        width: 87%;
+    }
+
+    .textoEInfoTxtINputButton button{
+        width: 98%;
     }
 } 

@@ -134,84 +134,132 @@ body{
     flex-direction: column;
 }
 
-.projectAll{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    margin: 3px 0;
-    width: 100%;
-    height: 200px;
-}
-
-.projectAllImg{
+.ProjectTitleandSelect{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 100%;
+    width: 100%;
 }
 
-.projectAllImg img{
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-    background-color: black;
-    transition: 1.5s;
-}
-
-.projectAllImg img:hover{
-    height: 210px;
-    width: 210px;
-    border-radius: 50%;
-    transition: 2s;
-    background-color: black;
-}
-
-.projectAllInfo{
+.ProjectTitle{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
+    width: 55%;
+    font-size: 30px;
+    color: #00804b;
+}
+
+.ProjectSelect{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 45%;
+    margin-right: 5%;
+}
+
+.Select{
+    height: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 3px;
+    border: 1px solid #00804b;
+}
+
+.Select option{
+    background-color: #00804b;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* cards */
+.SpaceProjectCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #00804b;
+}
+
+.cardOfProject{
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 30%;
+    margin: 10px;
+    background-color: aliceblue;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cardOfProject img{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.cardOfProject h3{
+    font-size: 15px;
+    margin: 5px;
+    color: #00804b;
+    font-weight: 600;
+}
+
+.skillTitle{
+    margin: 15px;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.spaceSkills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 13px;
     width: 60%;
     height: 100%;
+    flex-wrap: wrap;
 }
 
-.projectAllInfo .title{
-    font-size: 30px;
-    font-weight: 700;
+.spaceSkills span{
+    font-size: 15px;
 }
 
-.projectAllInfo .text{
-    width: 80%;
-}
-
-.btnGitSite{
+.btnCardProject{
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 15%;
-}
-
-.btnGitSite span{
-    display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 100%;
-    border: 1px solid black;
+    height: 50px;
+    background-color: #1f63a1;
 }
 
-.btnGitSite a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
+.btnCardProject button{
     height: 100%;
-    color: black;
-    text-decoration: none;
+    width: 50%;
+}
+
+.btnProjectGithub{
+    background-color: #272727;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    font-size: 15px;   
+    cursor: pointer;
+}
+
+.btnProjectSite{
+    background-color: #3c94e7;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 /*FooterProject*/

@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Marcelo Junior | Dev Front End</title>
     <script src="https://kit.fontawesome.com/20345792df.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <!--HEADER COM NAV-->
     <div class="headerNavBar">
         <header>
             <nav>
-                <span>Marcelo Junior</span>
+                <div class="iconName">
+                    <span class="material-icons code">code</span>
+                    <span class="nameMarcelo">Marcelo Junior</span>
+                </div>
+                
                 <div class="mobile-menu">
                     <div class="line1"></div>
                     <div class="line2"></div>
@@ -37,16 +43,19 @@
             <h5>Olá, meu nome é</h5>
             <h2>Marcelo Junior</h2>
             <h4>Eu sou <span>Programador</span></h4>
-            <button>Contratar-me</button>
+            <a href="#sobreLink" class="apresentaçaoComFotoInformacoesButtonIcon">
+                <div class="apresentaçaoComFotoInformacoesButtonIcon">
+                    <span class="material-icons apresentaçaoComFotoInformacoesIcon">fingerprint</span>
+                    <span class="apresentaçaoComFotoInformacoesButton">Sobre</span>
+                </div>
+            </a>
         </div>
         <div class="apresentaçaoComFotoIMG">
-            <!--<img src="./img/astronaut.svg" alt="">-->
-            
+            <img src="./img/astronaut.svg" alt="">
         </div>
     </div>
 
     <!--SOBRE QUEM SOU EU-->
-    <div class="blocoBranco">
         <div class="sobreQuemSouEu">
             <a name='sobreLink'></a>
             <div class="sobreQuemSouEuTitulo">
@@ -58,20 +67,38 @@
                     <img src="./img/eu2.jpg" alt="">
                 </div>
                 <div class="sobreQuemSouEuFotoEInformacaoINFO">
-                    <h4>Sou o Marcelo e sou <span>Programador</span></h4>
+                    <h4>Olá! Meu nome é Marcelo Junior.</h4>
+                    <h5>Eu sou Desenvolvedor Front-end Web e Mobile</h5>
                     <p>Olá, eu sou o Marcelo Junior, sou Brasileiro e nascido na cidade de Lorena-sp,
-                        sou formado em Administração de empresas e atualmente exerço a área de Programação!
+                        sou formado em <strong> Administração de empresas</strong> e <strong>Análise e desenvolvimentos de sistemas</strong>.
+                        atualmente exerço a área de Programação e desenvolvimento Web!
                         Gosto muito de desenvolvimento, curto demais Front-end!
                     </p>
-                    <div class="sobreQuemSouEuFotoEInformacaobtn">
-                        <button id="btnDowloadCurriculo" onclick="DowloadCurriculo()">Download CV</button>
+                    <p>
+                        Também sou criador de conteúdo no instagram, compartilho conhecimentos de Excel, na página chamada "Resolve com Excel"
+                    </p>
+                    <div class="sobreQuemSouMsgIcons">
+                        <span>Você pode me encontrar nas redes sociais:</span>
+                        <div class="sobreQuemSouEuFotoEInformacaoIcons">
+                            <div>
+                                <a href="" class="sobreQuemSouiconA"><img src="./img/iconFace.png" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="" class="sobreQuemSouiconA"><img src="./img/iiconGit.png" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="" class="sobreQuemSouiconA"><img src="./img/iconLinkedin.png" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="" class="sobreQuemSouiconA"><img src="./img/iconInsta.png" alt=""></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--SERVIÇOS-->
+    <!--SERVIÇOS
     <div class="blocoPreto">
         <div class="servicos">
             <a name='servicoLink'></a>
@@ -113,9 +140,10 @@
             </div>    
         </div>
     </div>
+    -->
     
-    <!--ESPECIALIDADES-->
-    <div class="blocoBranco mobileEspecialidade">
+    
+    <!--ESPECIALIDADES - HABILIDADES-->
         <div class="Especialidade">
             <a name='especialidadeLink'></a>
             <div class="servicosTitulo">
@@ -124,47 +152,49 @@
             </div>
             <div  class="EspecialidadeTextoEItens">
                 <div class="EspecialidadeTexto">
-                    <h3>Minhas habilidade criativas e experiencias</h3>
-                    <p>Minhas experiencias relacionadas a cada ferramentas que faz parte de minha<br>
-                        aprendizagem, de meus estudos e de minha jornada no mundo da programação!
+                    <div class="EspecialidadeTextoIconTitle">
+                        <span class="material-icons">school</span>
+                        <h3>Habilidades & Experiências</h3>
+                    </div>
+                    <p>Atualmente minhas maiores habilidades, são as tecnologias <strong>front-end</strong>, porém a cada dia que passa, procuro me dedicar a aprender novos conceitos para melhorar as minhas 
+                        habilidades e assim aumentar o meu portifólio para atender as demandas do mercado de trabalho.
                     </p>
                     <button>Saiba mais!</button>
                 </div>
                 <div class="EspecialidadeTodosItens">
                     <div class="EspecialidadeTodosItensItensEPorcentagens">
                         <h6>HTML</h6>
-                        <span>80%</span>
+                        <span>Intermediário/Avançado</span>
                     </div>
                     <div class="LineEspecialHorizontal html"></div>
                     <div class="EspecialidadeTodosItensItensEPorcentagens">
                         <h6>CSS3</h6>
-                        <span>66%</span>
+                        <span>Intermediário</span>
                     </div>
                     <div class="LineEspecialHorizontal css"></div>
                     <div class="EspecialidadeTodosItensItensEPorcentagens">
                         <h6>JAVASCRIPT</h6>
-                        <span>50%</span>
+                        <span>Intermediário</span>
                     </div>
                     <div class="LineEspecialHorizontal js"></div>
                     <div class="EspecialidadeTodosItensItensEPorcentagens">
                         <h6>MYSQL</h6>
-                        <span>45%</span>
+                        <span>básico</span>
                     </div>
                     <div class="LineEspecialHorizontal msq"></div>
                     <div class="EspecialidadeTodosItensItensEPorcentagens">
                         <h6>REACT.JS</h6>
-                        <span>35%</span>
+                        <span>Intermediário</span>
                     </div>
                     <div class="LineEspecialHorizontal reactjs"></div>
                     <div class="EspecialidadeTodosItensItensEPorcentagens">
                         <h6>REACT NATIVE</h6>
-                        <span>15%</span>
+                        <span>Intermediário</span>
                     </div>
                     <div class="LineEspecialHorizontal reactnative"></div>
                 </div>
             </div>
         </div>
-    </div>
     <!--CONTATOS-->
     <div class="blocoPreto mobileContact">
         <div class="contatos">

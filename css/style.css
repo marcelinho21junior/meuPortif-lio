@@ -1,21 +1,53 @@
+/*
+    cores
+    azul : rgb(167, 247, 247)
+    branco: aliceblue
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
 
 *{
     margin: 0;
+    color: rgb(49, 53, 58);
+    font-family: sans-serif;
 }
 
 body{
     height: 100vh;
     width: 100vw;
+    color: #082142;
     /*background-color: rgb(22, 22, 22);*/
 }
 
 /*-----------------headerNavBar-----------------*/
+.headerNavBar{
+    border: 10px 5px 5px black;
+}
 
+.iconName{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+
+.code{
+    color: rgb(253, 253, 139);
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #082142;
+}
+
+.nameMarcelo{
+    color: #082142;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+}
 
 a{
     color: black;
     text-decoration: none;
+    font-weight: 600;
 }
 
 a:hover{
@@ -24,10 +56,11 @@ a:hover{
 
 nav{
     display: flex;
+    position: fixed;
     justify-content: space-around;
     align-items: center;
     font-family:sans-serif;
-    background-color: rgb(132, 247, 247);
+    background-color: rgb(167, 247, 247);
     height: 15vh;
     width: 100%;
 }
@@ -57,6 +90,10 @@ nav{
 @media(max-width: 999px){
     body{
         overflow-x: hidden;
+    }
+
+    nav{
+        position: fixed;
     }
 
     .nav-list{
@@ -123,8 +160,8 @@ nav{
     align-items:center;
     flex-direction: row;
     width: 100%;
-    height: 85%;
-    background-color: rgb(22, 22, 22);
+    height: 100%;
+    background-color:aliceblue;
 }
 
 .apresentaçaoComFotoIMG{
@@ -133,13 +170,6 @@ nav{
     justify-content: center;
 }
 
-.apresentaçaoComFoto img{
-    height: 50%;
-    width: 50%;
-    margin: 0 50px;
-    border-radius: 50%;
-    opacity: 70%;
-}
 
 .apresentaçaoComFotoInformacoes{
     display: flex;
@@ -167,15 +197,26 @@ nav{
     color: #00804b;
 }
 
-.apresentaçaoComFotoInformacoes button{/*Button*/
-    margin: 15px 1px;/*cima e baixo*/
-    background-color: #00804b;
+.apresentaçaoComFotoInformacoesButtonIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #082142;
     color: white;
-    width: 60%;
-    padding: 8px;
-    font-size: 15px;
-    font-weight: 600;
-    border-radius: 10px;
+    width: 40%;
+    height: 25%;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.apresentaçaoComFotoInformacoesIcon{
+    color: white;
+    margin: 5px;
+}
+
+.apresentaçaoComFotoInformacoesButton{
+    color: white;
+    font-size: 20px;
 }
 
 .apresentaçaoComFotoInformacoes button:hover{/*Button hover*/
@@ -191,8 +232,9 @@ nav{
     justify-content:space-around;
     align-items: center;
     flex-direction: column;
-    height: 90%;
-    width: 90%;
+    height: 95%;
+    width: 100%;
+    background-color: rgb(167, 247, 247);
 }
 
 .sobreQuemSouEu img{
@@ -218,7 +260,7 @@ nav{
     justify-content:space-around;
     align-items: center;
     flex-direction: row;
-    width: 80%;
+    width: 90%;
     height: 70%;
 }
 
@@ -230,9 +272,14 @@ nav{
     height: 100%;
 }
 
+.sobreQuemSouEuFotoEInformacaoFOTO img{
+    height: 70%;
+    width: 70%;
+}
+
 .sobreQuemSouEuFotoEInformacaoINFO{/*Direito Informaçoes e button*/
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items: center;
     flex-direction: column;
     width: 60%;
@@ -241,6 +288,13 @@ nav{
 
 .sobreQuemSouEuFotoEInformacaoINFO h4{/*Eu sou o marcelo e sou...*/
     width: 100%;
+    font-size: 30px;
+    text-align: start;
+}
+
+.sobreQuemSouEuFotoEInformacaoINFO h5{/*Eu sou o marcelo e sou...*/
+    width: 100%;
+    font-size: 27px;
     text-align: start;
 }
 
@@ -276,6 +330,35 @@ nav{
     background-color: white;
     color:#00804b ;
     transition: background-color .5s;
+}
+
+.sobreQuemSouMsgIcons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+}
+
+.sobreQuemSouMsgIcons span{
+    font-weight: 600;
+}
+
+.sobreQuemSouEuFotoEInformacaoIcons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+
+.sobreQuemSouiconA{
+    height: 100%;
+}
+
+.sobreQuemSouiconA img{
+    height: 50px;
+    width: 50px;
 }
 
 /*SERVIÇOS*/
@@ -392,9 +475,21 @@ nav{
     margin: 0 20px;
 }
 
+.EspecialidadeTextoIconTitle{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 70%;
+}
+
 .EspecialidadeTexto h3{
     font-size: 25px;
     font-weight: 600;
+}
+
+.EspecialidadeTexto p{
+    line-height: 1.5;
 }
 
 .EspecialidadeTexto button{
@@ -448,7 +543,7 @@ nav{
 }
 
 .css::before{
-    width: 66%;
+    width: 60%;
 }
 
 .js::before{
@@ -456,15 +551,15 @@ nav{
 }
 
 .msq::before{
-    width: 45%;
+    width: 25%;
 }
 
 .reactjs::before{
-    width: 35%;
+    width: 60%;
 }
 
 .reactnative::before{
-    width: 15%;
+    width: 60%;
 }
 
 

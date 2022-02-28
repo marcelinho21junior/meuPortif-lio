@@ -11,10 +11,7 @@ body{
 }
 
 /*-----------------headerNavBar-----------------*/
-.headerNavBar{
-    position: fixed;
-    width: 100%;
-}
+
 
 a{
     color: black;

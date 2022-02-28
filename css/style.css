@@ -12,43 +12,110 @@ body{
 
 /*-----------------headerNavBar-----------------*/
 .headerNavBar{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    flex-direction: row;
-    background-color: rgb(22, 22, 22);
-    color: white;
-    height: 10%;
-    width: 100%;
     position: fixed;
+    width: 100%;
 }
 
-
-.headerNavBarTemaPortifolio{
-    font-size: 30px;
-}
-
-.headerNavBarTemafolio{
-    color: #00804b;;
-}
-
-.headerNavBarLinks{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    flex-direction: row;
-    width: 35%;
-}
-
-.nav-link{
-    color: white;
-    font-weight: 600;
+a{
+    color: black;
     text-decoration: none;
 }
 
-.nav-link:hover{
-    color: #00804b;
-    font-weight: 600;
+a:hover{
+    opacity: 0.7;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:sans-serif;
+    background-color: rgb(132, 247, 247);
+    height: 15vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: black;
+    margin: 8px;
+}
+
+@media(max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+    }
+
+    a{
+        color: white;
+    }
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobile-menu.active .line1{
+        background: red;
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .mobile-menu.active .line2{
+        opacity: 0;   
+    }
+
+    .mobile-menu.active .line3{
+        background: red;
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
 }
 
 /*APRESENTAÇAO COM FOTO*/

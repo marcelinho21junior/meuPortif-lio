@@ -29,6 +29,7 @@ nav{
     font-family:sans-serif;
     background-color: rgb(132, 247, 247);
     height: 15vh;
+    width: 100%;
 }
 
 .nav-list{
@@ -118,6 +119,7 @@ nav{
 /*APRESENTAÇAO COM FOTO*/
 .apresentaçaoComFoto{
     display: flex;
+    overflow-x: hidden;
     justify-content:space-around;
     align-items:center;
     flex-direction: row;

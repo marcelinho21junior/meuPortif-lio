@@ -306,6 +306,7 @@ nav{
     text-align: justify;
     margin: 5px 0;
     font-weight: 500;
+    line-height: 1.5;
 }
 
 .sobreQuemSouEuFotoEInformacaobtn{/*info e foto posicionamento butao*/
@@ -368,7 +369,8 @@ nav{
     align-items: center;
     flex-direction: column;
     height: 90%;
-    width: 70%;
+    width: 100%;
+    background-color:rgb(167, 247, 247);
 }
 
 .servicosTitulo{/*SERVIÇOS tema*/
@@ -387,6 +389,23 @@ nav{
     color: #00804b;
 }
 
+.HowCanIHelpList{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    height:8% ;
+}
+
+.HowCanIHelpList h3{
+    font-size: 30px;
+}
+
+.HowCanIHelpList span{
+    margin: 10px 0;
+    font-weight: 600;
+}
+
 .servicosCards{
     display: flex;
     justify-content:start;
@@ -396,7 +415,7 @@ nav{
     overflow-y: hidden;
     white-space: nowrap;
     height: 70%;
-    width: 75%;
+    width: 60%;
 }
 
 .servicosCards::-webkit-scrollbar-thumb{
@@ -408,6 +427,11 @@ nav{
     width: auto;
 }
 
+.servicosCards::-webkit-scrollbar-thumb:hover{
+    background-color: #00804b;
+    transition: background-color 0.5s;
+}
+
 .servicosCardsIndividual{
     display: flex;
     justify-content:space-around;
@@ -415,10 +439,10 @@ nav{
     flex-direction: column;
     background: rgb(58, 57, 57);
     border-radius: 4px;
-    padding: 5px;
+    padding: 0 50px;
     margin: 0 5px;
     height: 80%;
-    width: auto;
+    
 }
 
 .servicosCardsIndividual:hover{
@@ -427,8 +451,7 @@ nav{
 }
 
 .servicosCardsIndividual img{
-    height: 50%;
-    width: 50%;
+    height: 60%;
 }
 
 .servicosCardsIndividual i{
@@ -492,17 +515,35 @@ nav{
     line-height: 1.5;
 }
 
-.EspecialidadeTexto button{
+.BtnsEspecialidade{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 20%;
+}
+
+.EspecialidadeTextobtn{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px;
-    border-radius: 5px;
-    width: 30%;
-    margin: 5px 0;
-    background-color: #00804b;
+    background: #082142;
     color: white;
-    font-weight: 600;
+    width: 40%;
+    height: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.EspecialidadeTextobtn img{
+    height: 70%;
+    color: wheat;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.EspecialidadeTextobtn span{
+    color: white;
 }
 
 .EspecialidadeTexto button:hover{/*info e foto butao HOVER*/
@@ -513,6 +554,7 @@ nav{
 
 .EspecialidadeTodosItens{
     width: 50%;
+    line-height: 2.0;
 }
 
 .EspecialidadeTodosItensItensEPorcentagens{
@@ -561,6 +603,7 @@ nav{
 .reactnative::before{
     width: 60%;
 }
+
 
 
 /*CONTATOS*/

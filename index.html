@@ -219,8 +219,8 @@
             <h4><span>--</span>Meus projetos<span>--</span></h4>
         </div>
         <div class="projetTwoTitle">
-            <h3>Uma breve apresentação dos projetos realizados.</h3>
-            <h3>Alguns deles fazem parte do meu trabalho como freelancer e outros são projetos criados para prática de estudos.</h3>
+            <h3 class="tituloMobile">Uma breve apresentação dos projetos realizados.</h3>
+            <h3 class="SubtituloMobile">Alguns deles fazem parte do meu trabalho como freelancer e outros são projetos criados para prática de estudos.</h3>
         </div>
         <div class="projectsCards">
             <div class="cards">
@@ -278,7 +278,6 @@
     </div>
 
     <!--CONTATOS-->
-    <div class="blocoPreto mobileContact">
         <div class="contatos">
             <a name='contatoLink'></a>
             <div class="contatoTitulo">
@@ -287,57 +286,55 @@
             </div>
             <div class="contatosTextoEINPUTS">
                 <div class="textoEInfo">
-                    <div>
-                        <h4>Fale Conosco!</h4>
-                        <p>Segue adiante alguns dados pessoais de meus contatos</p>
+                    <p class="ContatoDuvidas">Caso tenha alguma dúvida, envie uma mensagem. Sua mensagem será respondida o mais breve possível.</p>
+                    <div class="contatoH3P">
+                        <h3>Endereço:</h3>
+                        <p>Lorena, São Paulo</p>
+                        <p>Brasil</p>
                     </div>
-                    <div class="textoEInfoItens">
-                        <div class="textoEInfoCadaItens">
-                            <div  class="textoEInfoCadaItensIMG">
-                                <img src="./img/People.ico" alt="">
-                            </div>
-                            <div class="textoEInfoCadaItensINFO">
-                                <span>Nome</span>
-                                <p>Marcelo Junior</p>
-                            </div>
-                        </div>
-
-                        <div class="textoEInfoCadaItens">
-                            <div class="textoEInfoCadaItensIMG">
-                                <img src="./img/Location.ico" alt="">
-                            </div>
-                            <div class="textoEInfoCadaItensINFO">
-                                <span>Endereço</span>
-                                <p>Lorena, Sp</p>
-                            </div>
-                        </div>
-
-                        <div class="textoEInfoCadaItens">
-                            <div class="textoEInfoCadaItensIMG">
-                                <img src="./img/email.ico" alt="">
-                            </div>
-                            <div class="textoEInfoCadaItensINFO">
-                                <span>Email</span>
-                                <p>msbcontjr@outlook.com</p>
-                            </div>
-                        </div>
+                    <div class="contatoH3P">
+                        <h3>Email:</h3>
+                        <p>msbcontjr@outlook.com</p>
+                    </div>
+                    <div class="contatoH3P">
+                        <h3>Telefone:</h3>
+                        <p>(12) 99126-8135</p>
+                        <p>(12) 3152- 8111</p>
+                    </div>
+                    <div class="contatoIcons">
+                        <a href="">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="textoEInfoTxtINputButton">
-                    <span>Mensagem</span>
-                        <form action="https://api.staticforms.xyz/submit" method="post" class="card">
+                        <form action="https://api.staticforms.xyz/submit" method="post" class="">
                             <div class="textoEInfoINput">
                                 <input type="hidden" name="accessKey" value="f917bb33-921a-4ef4-b7b9-d3a45cd96eb2">
-                                <input type="hidden" name="redirectTo" value="https://marcelinho21junior.github.io/meuPortifolio">
-                                <div>
-                                    <input type="text" class="nameEmail" id="name" required='true' name="name" placeholder="Nome">
-                                    <input type="text" class="nameEmail" id="sobrename" required='true' name="sobrenome" placeholder="Sobrenome">
+                                <!--<input type="hidden" name="redirectTo" value="https://marcelinho21junior.github.io/meuPortifolio">-->
+                                <h3 class="formaMsgTitle">Envie uma mensagem</h3>
+                                <div class="textoEInfoINputNameEmail">
+                                    <div class="textoEInfoINputname">
+                                        <p>Nome</p>
+                                        <input type="text" class="" id="name" required='true' name="name" placeholder="Nome">
+                                    </div>
+                                    <div class="textoEInfoINputEmail">
+                                        <p>Sobrenome</p>
+                                        <input type="text" id="sobrename" required='true' name="sobrenome" placeholder="Sobrenome">
+                                    </div>
                                 </div>
+
                                 <div class="textoEInfoINputSobrenome">
-                                    <input type="text" class="sobrenome" required='true' name="email" placeholder="E-mail">
+                                    <p>E-mail</p>
+                                    <input type="text" class="" required='true' name="email" placeholder="E-mail">
                                 </div>
+                                
                                 <div class="textoEInfoINputTextarea">
-                                    <textarea placeholder="Escrever..." name="message"></textarea>
+                                    <p>Mensagem</p>
+                                    <textarea placeholder="Digite uma mensagem" name="message"></textarea>
                                 </div>
                                 
                                 <button onclick="enviar()">Enviar</button>
@@ -347,7 +344,10 @@
                 </div>
             </div>
         </div> 
-    </div>
+        <div class="footer">
+            <h3>Desenvolvido por Marcelo Junior.</h3>
+            <H4>Copyright - Todos os direitos reservados</H4>
+        </div>
     <script src="./script/script.js"></script>
 </body>
 </html>

@@ -719,9 +719,10 @@ nav{
 
 /*CONTATOS*/
 .contatos{
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     color: white;
+    background-color: rgb(167, 247, 247);;
 }
 
 .contatoTitulo{
@@ -745,63 +746,43 @@ nav{
     width: 100%;
 }
 
-.textoEInfo{
+.textoEInfo{/*lado esquerdo*/
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    height: 90%;
-    width:50%;
-}
-
-.textoEInfoItens{
-    display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
-    width: 80%;
-    flex-direction: column;
-    width: 60%;
-    height: 60%;
+    height: 70%;
+    width:40%;
 }
 
-.textoEInfoCadaItens{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
+.ContatoDuvidas{
+    line-height: 1.5;
 }
 
-.textoEInfoCadaItensIMG{
+.contatoH3P h3{
+    margin: 10px 0;
+}
+
+.contatoH3P p{
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.contatoIcons{
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    justify-content: space-evenly;
     width: 30%;
+    height: 15%;
 }
 
-.textoEInfoCadaItensIMG img{
-    height: 50%;
-    width: 40%;
-}
 
-.textoEInfoCadaItensINFO{
-    height: 100%;
-    width: 90%;
-}
-
-.textoEInfoCadaItensINFO span{
-    font-weight: 900;
-    width: 50%;
-}
-
-.textoEInfoTxtINputButton{
+.textoEInfoTxtINputButton{/*lado direito*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 87%;
+    height: 95%;
     width: 50%;
 }
 
@@ -812,6 +793,21 @@ nav{
     margin: 5px 5px;
 }
 
+form{
+    height: 100%;
+    width: 90%;
+}
+
+.formaMsgTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    color: black;
+    letter-spacing: 1px;
+}
+
 .textoEInfoINput{
     display: flex;
     flex-direction: column;
@@ -819,6 +815,9 @@ nav{
     align-items: flex-start;
     margin: 8px;
     height: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
 }
 
 .textoEInfoINput input{
@@ -828,12 +827,38 @@ nav{
     margin: 4px;
 }
 
-.textoEInfoINputSobrenome{
+.textoEInfoINputNameEmail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     width: 100%;
+    height: 30%;
 }
 
-.sobrenome{
-    width: 96%;
+.textoEInfoINputname{
+    width: 50%;
+}
+
+.textoEInfoINputname input{
+    width: 90%;
+}
+
+.textoEInfoINputEmail{
+    width: 50%;
+}
+
+.textoEInfoINputEmail input{
+    width: 90%;
+}
+
+.textoEInfoINputSobrenome{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.textoEInfoINputSobrenome input{
+    width: 95%;
 }
 
 .textoEInfoINputTextarea{
@@ -856,8 +881,8 @@ nav{
     padding: 8px;
     border-radius: 5px;
     width: 30%;
-    margin: 9px 4px;
-    background-color: #00804b;
+    margin: 10px 4px;
+    background-color: #082142;
     color: white;
     font-weight: 600;
     cursor: pointer;
@@ -865,9 +890,31 @@ nav{
 
 .textoEInfoTxtINputButton button:hover{
     background-color: white;
-    color:#00804b ;
+    color:#082142;
+    border: 1px solid #082142;
     transition: background-color .5s;
 }
+
+/*footer*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20%;
+    width: 100%;
+    line-height: 1.5;
+    background-color: black;
+}
+
+.footer h3{
+    color: #fafafa;
+}
+
+.footer h4{
+    color: #fafafa;
+}
+
 
 
 /*BLOCOS*/
@@ -892,219 +939,175 @@ nav{
 }
 
 /*MOBILE*/
-@media(max-width:540px){
-    .headerNavBarTemaPortifolio{
-        display: none;
+@media(max-width:790px){
+    .iconName{
+        width: 35%;
     }
 
-    .headerNavBarLinks{
-        display: none;
-    }
-
-    .one,.two,.three{
-        background-color: #fff;
-        width: 100%;
-        height: 5px;
-        margin: 6px auto;
-
-        transition-duration: 0.3s;
-    }
-    
-    .menu-toggle{
-        width: 40px;
-        height:0;
-        margin-left: 180px;
-    }
-
-    .headerNavBar.on{
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 100vw;
-        height: 100vh;
-        background-color: #00804b;
-
-        z-index: 10;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .headerNavBar.on .headerNavBarLinks{
-        display: block;
-        height: 100%;
-        width: 100%;
-    }
-
-    .headerNavBar.on .menu-toggle{
-        position: absolute;
-        right: 80px;
-        top: 22px;
-        height: auto;
-        background-color: red;
-    }
-
-    .headerNavBar.on .menu-toggle .one{
-        transform: rotate(45deg) translate(7px, 7px);
-    }
-
-    .headerNavBar.on .menu-toggle .two{
-        opacity: 0;
-    }
-
-    .headerNavBar.on .menu-toggle .three{
-        transform: rotate(-45deg) translate(8px, -9px);
-    }
-
-    .headerNavBar.on .headerNavBarLinks div{
-        text-align: center;
-        display: block;
-    }
-
-    .headerNavBar.on .headerNavBarLinks a{
-        transition-duration: 0.5;
-        font-size: 1rem;
-        line-height: 6rem;
-        display: block;
-    }
-
-    /*eu sou marcelo*/
     .apresentaçaoComFoto{
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        width: 100%;
+        flex-direction: column;
+        height: 135vh;
     }
 
-    .apresentaçaoComFoto button{
+    .apresentaçaoComFotoInformacoes{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
+        height: 25%;
         width: 100%;
     }
 
-    .apresentaçaoComFoto img{
+    .apresentaçaoComFotoInformacoesButtonIcon{
         display: none;
     }
 
-    /*sobreQuemSouEu*/
+    .apresentaçaoComFotoIMG{
+        width: 80%;
+    }
+
+    /**/
     .sobreQuemSouEuTitulo{
         display: none;
     }
 
+    .sobreQuemSouEu{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
     .sobreQuemSouEuFotoEInformacao{
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         height: 100%;
     }
 
-    .sobreQuemSouEuFotoEInformacaoINFO{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .sobreQuemSouEuFotoEInformacaoFOTO img{
+        height: 90%;
         width: 100%;
     }
 
     .sobreQuemSouEuFotoEInformacaoINFO h4{
+        font-size: 35px;
+        line-height: 1.5;
         text-align: center;
-        font-weight: 900;
     }
 
-    .sobreQuemSouEuFotoEInformacaobtn button{
-        width: 100%;
+    .sobreQuemSouEuFotoEInformacaoINFO h5{
+        display: none;
     }
 
-    /*ESPECIALIDADES*/
-    .mobileEspecialidade{
+    .sobreQuemSouEuFotoEInformacaoINFO p{
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    .sobreQuemSouMsgIcons{
         display: flex;
-        flex-direction: column;
-        height: 90%;
+        align-items: center;
+        justify-content: center;
     }
 
+    .sobreQuemSouMsgIcons span{
+        display: none;
+    }
+
+    /**/
     .servicosTitulo{
         display: none;
     }
 
-    .EspecialidadeTexto{
-        text-align: center;
+    .Especialidade{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
     }
 
     .EspecialidadeTextoEItens{
         display: flex;
-        justify-content: space-around;
         align-items: center;
+        justify-content: space-between;
         flex-direction: column;
-        height: 100%;
         width: 100%;
     }
 
-    .EspecialidadeTodosItensItensEPorcentagens{
-        display: flex;
+    .EspecialidadeTextoIconTitle{
+        width: 100%;
+        height: 20%;
+    }
+
+    .EspecialidadeTexto p{
+        font-size: 15px;
+        font-weight: 600;
+        text-align: justify;
+    }
+
+    .BtnsEspecialidade{
         width: 100%;
     }
 
-    .EspecialidadeTextoEItens button{
-        display: none;
-    }
-
-    /*CONTATOS*/
-    .mobileContact{
-        display: flex;
-        height: 90%;
-        width: 100%;
-    }
-
+    /**/
     .contatoTitulo{
         display: none;
     }
 
-    .contatosTextoEINPUTS{
+    .HowCanIHelpList h3{
+        font-size: 40px;
+    }
+
+    .HowCanIHelpList span{
+        font-size: 20px;
+        margin: 30px 0;
+    }
+
+    .servicosCards{
+        height: 60%;
+    }
+
+    /**/
+    .projeto{
+        width: 100%;
+    }
+
+    .tituloMobile{
+        margin: 15px 0;
+        font-size: 30px;
+    }
+
+    .SubtituloMobile{
+        font-size: 20px;
+        text-align: justify;
+        width: 90%;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #00804b;
+    }
+
+    .card{
+        width: 70%;
         height: 100%;
-        width: 100%;
+    }
+
+    /**/
+    .contatosTextoEINPUTS{
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
+        height: 100%;
+        background-color: #00804b;
     }
-
-    .textoEInfo{
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-
-    .textoEInfoCadaItens{
-        width: 250px;
-    }
-
-    .textoEInfoCadaItensIMG img{
-        margin: 0 30px;
-        width: 40%;
-    }
-
-    .textoEInfoTxtINputButton{
-        width: 100%;
-    }
-
-    .textoEInfoINput{
-        display: flex;
-        flex-direction: column;
-        width: 110%;
-    }
-
-    .textoEInfoINput input{
-        width: 110%;
-    }
-
-    .textoEInfoINputSobrenome{
-        width: 87%;
-    }
-
-    .textoEInfoTxtINputButton button{
-        width: 98%;
-    }
-} 
+}

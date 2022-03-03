@@ -61,3 +61,10 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+  var typed = new Typed(".typing", {
+    strings:["Criador de conteúdo","Desenvolvedor","Front-End","Programador","Freelancer"],
+    typeSpeed:100,
+    backSpeed:60,
+    loop:true
+  })

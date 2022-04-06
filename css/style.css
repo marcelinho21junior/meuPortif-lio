@@ -534,11 +534,22 @@ nav{
     justify-content: center;
     align-items: center;
     background: #082142;
+    margin: 0 19px;
     color: white;
     width: 40%;
     height: 100%;
     border-radius: 2px;
     cursor: pointer;
+}
+
+.EspecialidadeTextobtn i{
+    color: white;
+    padding: auto;
+    margin: 0 5px;
+}
+
+.lauch{
+    margin: 0 5px;
 }
 
 .EspecialidadeTextobtn img{

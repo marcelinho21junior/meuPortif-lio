@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!--HEADER COM NAV-->
@@ -65,15 +66,15 @@
     <!--SOBRE QUEM SOU EU-->
         <div class="sobreQuemSouEu">
             <a name='sobreLink'></a>
-            <div class="sobreQuemSouEuTitulo">
+            <div class="sobreQuemSouEuTitulo" data-aos="fade-up">
                 <h2>Sobre</h2>
                 <h4>--Quem sou eu--</h4>
             </div>
-            <div  class="sobreQuemSouEuFotoEInformacao">
-                <div class="sobreQuemSouEuFotoEInformacaoFOTO">
+            <div class="sobreQuemSouEuFotoEInformacao">
+                <div class="sobreQuemSouEuFotoEInformacaoFOTO" data-aos="fade-right">
                     <img src="./img/eu2.jpg" alt="">
                 </div>
-                <div class="sobreQuemSouEuFotoEInformacaoINFO">
+                <div class="sobreQuemSouEuFotoEInformacaoINFO" data-aos="fade-left">
                     <h4>Olá! Meu nome é Marcelo Junior.</h4>
                     <h5>Eu sou Desenvolvedor Front-end Web e Mobile</h5>
                     <p>Olá, eu sou o Marcelo Junior, sou Brasileiro e nascido na cidade de Lorena-sp,
@@ -108,12 +109,12 @@
     <!--ESPECIALIDADES - HABILIDADES-->
         <div class="Especialidade">
             <a name='especialidadeLink'></a>
-            <div class="servicosTitulo">
+            <div class="servicosTitulo" data-aos="fade-up">
                 <h2>Especialidades</h2>
                 <h4><span>--</span>Que faço<span>--</span></h4>
             </div>
             <div  class="EspecialidadeTextoEItens">
-                <div class="EspecialidadeTexto">
+                <div class="EspecialidadeTexto" data-aos="fade-right">
                     <div class="EspecialidadeTextoIconTitle">
                         <span class="material-icons">school</span>
                         <h3>Habilidades & Experiências</h3>
@@ -132,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="EspecialidadeTodosItens">
+                <div class="EspecialidadeTodosItens" data-aos="fade-left">
                     <div class="EspecialidadeTodosItensItensEPorcentagens">
                         <h6>HTML</h6>
                         <span>Intermediário/Avançado</span>
@@ -181,14 +182,16 @@
     <!--SERVIÇOS-->
         <div class="servicos">
             <a name='servicoLink'></a>
-            <div class="contatoTitulo">
+            <div class="contatoTitulo" data-aos="fade-up">
                 <h2>Serviços</h2>
                 <h4><span>--</span>Meus Projetos<span>--</span></h4>
             </div>
-            <div class="HowCanIHelpList">
+
+            <div class="HowCanIHelpList" data-aos="fade-right">
                 <h3>Como eu posso te ajudar?</h3>
                 <span>Abaixo esta uma lista de ferramentas que eu utilizo em meus projetos</span>
             </div>
+
             <div class="servicosCards">
                 <div class="servicosCardsIndividual">
                     <img src="./img/html.ico" alt="">
@@ -224,14 +227,16 @@
     <!--PROJETOS-->
     <a name='projetoPage'></a>
     <div class="projeto">
-        <div class="contatoTitulo">
+        <div class="contatoTitulo" data-aos="fade-up">
             <h2 class="tituloContatos">Projetos</h2>
             <h4><span>--</span>Meus projetos<span>--</span></h4>
         </div>
-        <div class="projetTwoTitle">
+
+        <div class="projetTwoTitle" data-aos="fade-right">
             <h3 class="tituloMobile">Uma breve apresentação dos projetos realizados.</h3>
             <h3 class="SubtituloMobile">Alguns deles fazem parte do meu trabalho como freelancer e outros são projetos criados para prática de estudos.</h3>
         </div>
+        
         <div class="projectsCards">
             <div class="cards">
                 <div class="card">
@@ -312,7 +317,7 @@
                 </div><!--fim card-->
             </div>
         </div>
-        <div class="divButtonProject">
+        <div class="divButtonProject" data-aos="fade-right">
             <a href="./page/portifolio.html" class="buttonProject"> Conheça todo o portifólio</a>
         </div>      
     </div>
@@ -320,12 +325,12 @@
     <!--CONTATOS-->
         <div class="contatos">
             <a name='contatoLink'></a>
-            <div class="contatoTitulo">
+            <div class="contatoTitulo" data-aos="fade-up">
                 <h2 class="tituloContatos">Contatos</h2>
                 <h4><span>--</span>Meus contatos<span>--</span></h4>
             </div>
             <div class="contatosTextoEINPUTS">
-                <div class="textoEInfo">
+                <div class="textoEInfo" data-aos="fade-right">
                     <p class="ContatoDuvidas">Caso tenha alguma dúvida, envie uma mensagem. Sua mensagem será respondida o mais breve possível.</p>
                     <div class="contatoH3P">
                         <h3>Endereço:</h3>
@@ -350,7 +355,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="textoEInfoTxtINputButton">
+                <div class="textoEInfoTxtINputButton" data-aos="fade-left">
                         <form action="https://api.staticforms.xyz/submit" method="post" class="">
                             <div class="textoEInfoINput">
                                 <input type="hidden" name="accessKey" value="f917bb33-921a-4ef4-b7b9-d3a45cd96eb2">
@@ -389,7 +394,10 @@
             <H4>Copyright - Todos os direitos reservados</H4>
         </div>
     <script src="./script/script.js"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
 </body>

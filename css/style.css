@@ -1361,6 +1361,10 @@ form{
 
     /**/
     .projeto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
     }
 
@@ -1397,7 +1401,30 @@ form{
     }
 
     .card{
+        width: auto;
         height: 500px;
+    }
+
+    .card:hover{
+        transition: none;
+        width: 95%;
+    }
+
+    .divButtonProject{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .buttonProject{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        background-color: #082142;
     }
 
     /**/

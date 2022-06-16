@@ -1,0 +1,138 @@
+:root {
+    --black:#000000;
+    --white:#ffffff;
+    --blueM:#082142;
+  }
+
+.navbarportifolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(107, 199, 199);
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.titleMeuPortifolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.titleMeuPortifolio h1{
+    margin: 30px 0;
+    font-size: 50px;
+}
+
+.dropdownSelectPortifolio{
+    background-color: none;
+}
+
+.dropdownSelectPortifolioSelects{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.dropdown{
+    margin: 0 10px;
+}
+
+.Allcard{
+    padding: 10px;
+    margin-top: 20px;
+    background:linear-gradient(45deg, rgb(253, 252, 252),rgb(255, 251, 251))
+}
+
+.cardsPortifolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 10px 0;
+}
+
+.card-img-top{
+    height: 200px;
+}
+
+.cardBodyPortifolio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 250px;
+}
+
+.cardTitle{
+    font-weight: 700;
+}
+
+.cardBodyPortifolioIcons{
+    background-color: none;
+}
+
+.cardBodyPortifolioIcons i{
+    margin: 10px 5px;
+    border-radius: 100%;
+    padding: 7px;
+    background-color: var(--blueM);
+    color: var(--white);
+}
+
+.bi-github{
+    margin:0 5px;
+    color:var(--white)
+}
+
+.btn-primary{
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+.btnMyGit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.btnMyGit a{
+    width: 80%;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: var(--blueM);
+    border: none;
+    transition: all 0.5s;
+}
+
+.btnMyGit a:hover{
+    background-color: var(--white);
+    color: var(--blueM);
+    border: 1px solid var(--blueM);
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.footerPortifolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    width: 100%;
+    background-color: aqua;
+}

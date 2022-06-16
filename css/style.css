@@ -80,27 +80,6 @@ nav{
     margin:10px;
 }
 
-.nav-list li ul{
-    position: absolute;
-    display: none;
-    background-color: #96dec0;
-    border: 1px solid #00804b;
-}
-
-.nav-list li:hover ul{
-    display: block;
-}
-
-.nav-list li ul{
-    width: 150px;
-}
-
-.nav-list li ul li a{
-    display: block;
-    margin-left: -40px;
-}
-
-
 .mobile-menu{
     display: none;
     cursor: pointer;
